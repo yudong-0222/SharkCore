@@ -1,0 +1,24 @@
+name: ${name}
+version: ${version}
+description: ${description}
+author: ${author}
+main: ${mainClass}
+commands:
+  gmc:
+    description: Change gamemode to CREATIVE
+  gma:
+    description: Change gamemode to ADVENTURE
+  gms:
+    description: Change gamemode to SURVIVAL
+  gmsp:
+    description: Change gamemode to SPECTOR
+  day:
+    description: Change time to DAY
+  night:
+    description: Change time to NIGHT
+  sharkcore:
+    aliases:
+      - core
+      - help
+      - '?'
+      - shark
