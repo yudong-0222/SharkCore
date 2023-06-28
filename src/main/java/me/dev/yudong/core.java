@@ -23,6 +23,8 @@ public class core extends JavaPlugin {
         getCommand("day").setExecutor(new day());
         getCommand("night").setExecutor(new night());
         getCommand("sharkcore").setExecutor(new sharkcore(this));
+        getCommand("fly").setExecutor(new fly());
+
     }
 
     public void regEvent() {

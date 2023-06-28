@@ -7,3 +7,4 @@ me\dev\yudong\events\ConnectListener.class
 me\dev\yudong\cmds\day.class
 me\dev\yudong\cmds\night.class
 me\dev\yudong\core.class
+me\dev\yudong\cmds\fly.class

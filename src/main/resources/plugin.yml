@@ -16,6 +16,8 @@ commands:
     description: Change time to DAY
   night:
     description: Change time to NIGHT
+  fly:
+    description: enable/disable fly
   sharkcore:
     aliases:
       - core
