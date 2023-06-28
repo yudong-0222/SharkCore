@@ -1,6 +1,7 @@
 package me.dev.yudong;
 
 import me.dev.yudong.cmds.*;
+import me.dev.yudong.events.ConnectListener;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -11,6 +12,7 @@ public class core extends JavaPlugin {
     public void onEnable(){
         Bukkit.broadcastMessage(ChatColor.GREEN + "SharkCore Enabled!");
         regCmds();
+        regEvent();
     }
 
     public void regCmds() {
@@ -21,5 +23,9 @@ public class core extends JavaPlugin {
         getCommand("day").setExecutor(new day());
         getCommand("night").setExecutor(new night());
         getCommand("sharkcore").setExecutor(new sharkcore(this));
+    }
+
+    public void regEvent() {
+        getServer().getPluginManager().registerEvents(new ConnectListener(this), this);
     }
 }
