@@ -24,3 +24,5 @@ commands:
       - help
       - '?'
       - shark
+  spawn:
+    description: send u to spawn.

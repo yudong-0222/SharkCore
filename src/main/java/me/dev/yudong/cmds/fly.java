@@ -25,6 +25,8 @@ public class fly implements CommandExecutor {
                 p.setAllowFlight(false);
                 p.sendMessage(prefix + ch.RED + "飛行已經禁用");
             }
+        } else {
+            p.sendMessage(prefix + ch.RED + "你沒有權限這麼做!");
         }
         return true;
     }

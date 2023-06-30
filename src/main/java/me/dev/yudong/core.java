@@ -7,12 +7,14 @@ import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class core extends JavaPlugin {
+    public String prefix = "§7[§8SHARK§7] ";
 
     @Override
     public void onEnable(){
-        Bukkit.broadcastMessage(ChatColor.GREEN + "SharkCore Enabled!");
         regCmds();
         regEvent();
+
+        Bukkit.broadcastMessage(ChatColor.GREEN + "SharkCore Enabled!");
     }
 
     public void regCmds() {
@@ -24,7 +26,7 @@ public class core extends JavaPlugin {
         getCommand("night").setExecutor(new night());
         getCommand("sharkcore").setExecutor(new sharkcore(this));
         getCommand("fly").setExecutor(new fly());
-
+        getCommand("spawn").setExecutor(new spawn(this));
     }
 
     public void regEvent() {
